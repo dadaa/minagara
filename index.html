@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>minagara</title>
+    <script type="text/javascript" src="https://cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <section id="connect-form">
+      <button id="connect-button">
+        <label>connect to </label>
+        <label id="room-label"></label>
+      </button>
+    </section>
+
+    <main>
+      <aside id="controller">
+        <button id="camera-switching"></button>
+        <button id="camera-muting"></button>
+        <button id="audio-muting"></button>
+     </aside>
+      <section id="presenter">
+        <iframe id="presenter-stream" width="100%" height="100% "allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+      <ul id="audiences">
+      </ul>
+    </main>
+  </body>
+</html>
